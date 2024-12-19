@@ -1,0 +1,573 @@
+/*Google fonts import*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+/*Reseteo de css para minimizar las múltiples diferencias visuales que se dan a la hora de mostrar una misma página web
+ en diferentes navegadores*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none; /*quitar las redonditos de las listas*/
+    text-decoration: none; /*quitar lineas de los enlaces*/
+}
+
+/*Tipo de fuente de la página*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*poner un color oscuro a las imagenes*/
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(images/bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat; /*Para que no se repita la imagen de fondo*/
+    background-size: cover; /*Cubrir el ancho y la altura*/
+    min-height: 70vh; /*tamaño del header*/
+    display: flex;
+    align-items: center;     
+}
+
+.menu {
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;   
+}
+
+.logo {
+    width: 100px;
+    /*Al principio era un logo del tipo texto porque no me decidia si queria imagen*/
+    font-size: 25px;
+    color: #FFFDFC;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    float: left;
+    position: relative;
+}
+
+.menu .navbar ul li a {
+    color: #FFFDFC;
+    font-size: 18px;
+    padding: 20px; /*El área de relleno de un elemento es el espacio entre su contenido y su borde.*/
+    font-weight: 600;
+    display: block; /*Para que el padding se coloque correctamente*/
+}
+
+.menu .navbar ul li a:hover {  /*hover para cuando pasemos el mouse sobre los enlaces cambie de color*/
+    color: #CE967B;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer; /*Aparecer una manito cuando estas en un hipervinculo*/
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase; /*todo en mayus*/
+    margin-bottom: 35px; /*Separación hacia abajo*/
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #C5C5C5;
+    padding: 0 250px; /*izquierda y derecha el padding*/
+    margin-bottom: 25px;
+
+}
+
+.btn-1 { /*hago referencia a la etiqueta*/
+    display: inline-block; /*El enlace es de tipo texto para convertirlo a block y poder usar margin y padding*/
+    padding: 11px 35px;
+    background-color: #CE967B;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+
+.btn-1:hover { /*Cuando pasamos el mouse sobre el enlace para que cambie de color*/
+    background-color: #ec9f2b;
+}
+
+.coffee {
+    background-color: #E1E2E6;
+    padding: 100px 0;
+    position: relative;
+}
+
+.coffee-content {
+    text-align: center;
+}
+
+.coffee-content h2 {
+    color: #323337;
+    padding: 0 250px;
+    margin-bottom: 15px;
+    font-size: 55px;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+.txt-p {
+    color: #414247;
+    font-size: 16px;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.coffee-group {
+    display: flex; /*para que los elementos se coloquen delante*/
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.coffee-1 {
+    padding: 0 25px;
+}
+
+.coffee-1 img {
+    width: 200px; 
+}
+
+.coffee-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.coffee-1 h3 {
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.coffee-1 p {
+    text-align: justify;
+}
+
+.services {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(images/bg3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.services-content {
+    text-align: center  ;
+}
+
+.services-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-content p {
+    font-size: 16px;
+    color: #C5C5C5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.services-1 {
+    padding: 0 100px;
+}
+
+.services-1 img {
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.services-1 h3 {
+    color: #eaccea;
+    font-size: 18px;
+}
+
+.general {
+    display: flex;
+}
+
+.general-1 {
+width: 50%;
+padding: 100px 250px 100px 100px; /*100 arriba, 250 derecha, 100 abajo, 100 izquierda*/
+background-color: #E1E2E6;
+}
+
+.general-1 p{
+    text-align: justify;
+}
+
+.general-2 {
+    background-image: url(images/de_mascotas/perrito.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3 {
+    background-image: url(images/de_juegos/juego.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0; /*25 arriba, 0 derecha, 45 abajo, 0 izquierda*/
+}
+
+.blog {
+    padding: 100px 0; /*izquierda y derecha*/
+    text-align: center;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1 {
+    padding: 15px 55px;
+}
+
+.blog-1 img {
+    width: 250px;
+    border-radius: 15px; /*voy a modificar las esquinas*/
+    margin-bottom: 15px;/*separación hacia abajo*/
+}
+
+.blog-1 h3 {
+    font-size:  25px;
+    color: #323337;
+}
+
+/*Footer*/
+.footer {
+    padding: 100px 0;
+    background-color: #000000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /*meto una separación entre ellos*/
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #F9FAFC;
+    margin-bottom: 15px;
+    padding-left: 2rem;
+}
+
+.logos_redes{
+    display: column;
+    justify-content: space-between;
+    padding-left: 4.25rem;
+    
+}	
+
+.link li{
+    line-height: 0px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #C5C5C5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.link img{
+    width: 50px;
+}
+
+.footer_logo img{
+    width: 200px;
+}
+
+.copyright{
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 0px 0px;
+}
+
+
+.cardsFlex {
+    display: flex;
+    margin: 2rem 1rem 2rem;
+    width: 0rem 1rem;
+}
+
+.boxCards{
+    background-color: #E1E2E6;
+    border-radius: 30px;
+    padding: 1rem 0 10rem;
+    margin: 1rem;
+
+}
+
+.boxCards img{
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+
+}
+
+.cart-container {
+    margin: 20px;
+}
+
+.table {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table img {
+    max-width: 50px;
+    height: auto;
+}
+
+
+/*Estilos para el formulario de contacto*/
+
+.conteiner h2{
+    margin-top: 2%;
+}
+
+.formulario_contacto{
+    text-align: center;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formulario_datos label{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin-top: 2%;
+    align-items: center;
+    
+}
+
+.formulario_datos textarea{
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario_datos input{
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/*Boton del formulario apliques*/
+.boton_formulario {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1%;
+  }
+  .boton_formulario:hover {
+    background-color: #45a049;
+  }
+  .boton_formulario:active {
+    background-color: #3e8e41;
+  }
+
+  .form-control-motivo{
+    height: 5rem;
+  }
+
+
+  /*Estilos para la parte de ubicación*/
+  .lugar_encuentro h3{
+    text-align: center;
+  }
+
+  .mapita iframe{
+    margin:0.5rem 23rem 3rem; 
+  }
+
+  /*Parte Responsive*/
+@media(max-width: 991px){   /*cuando baje a 991px que aplique el responsive*/
+
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;  /*Para que aparezca el menú hamburguesa*/
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;  /*para que no aparezca hasta que le demos al menú hamburguesa*/
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;  /*cada vez que andemos en modo responsive en el manú va a aparecer nuestro menú*/
+    }
+
+    .header {
+        min-height: 0vh; /*para no tener una altura definida en el responsive*/
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .coffee {
+        padding: 30px;
+    }
+
+    .coffee-content h2 {
+        padding: 0;
+    }
+
+    .txt-p {
+        padding: 0;
+    }
+
+    .coffee-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .coffee-img {
+        display: none;
+    }
+
+    .services {
+        padding: 30px;
+    }
+
+    .services-content p {
+        padding: 0;
+    }
+
+    .services-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .services-1 {
+        margin-bottom: 25px; /*Separación entre los servicios*/
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2 {
+        display: none;
+    }
+
+    .general-3 {
+        display: none;
+    }
+
+    .blog {
+        padding: 30px;
+    }
+
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}  
+
