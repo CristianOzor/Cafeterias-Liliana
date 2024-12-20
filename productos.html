@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeteria Liliana</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -41,56 +40,84 @@
             
 
         </div>
-    </header>  
+    </header>
 
-    <main class="formulario">
-            <div class="conteiner">
-                <h2 class="coffee-content conteiner">Contáctenos</h2>
 
-            
-            <form action="registro.php" method="post" class="formulario_contacto">
-                <div class="formulario_datos">
-                    <label for="nombre_apellido"class="form-label">Nombre:</label>
-                    <input type="text"class="form-control" name="nombre" placeholder="Inserte su Nombre">
-                </div>
-    
-                <div class="formulario_datos">
-                    <label for="email"class="form-label">Email:</label>
-                    <input type="email"class="form-control" name="email" placeholder="Inserte su Email"/>
-                </div>
-    
-                <div class="formulario_datos">
-                    <label for="telefono" class="form-label">Teléfono:</label>
-                    <input type="text"class="form-control" name="telefono" placeholder="Escriba su Telefono"/>    
-                </div>
-    
-                <div class="formulario_datos">
-                    <label for="ciudad" class="form-label">Ciudad:</label>
-                    <input type="text"class="form-control" name="ciudad" placeholder="Escriba su ciudad"/>
-                </div>
-    
-                <div class="formulario_datos">
-                    <label for="motivo_contacto" class="form-label">Motivo de contacto:</label>
-                    <textarea class="form-control-motivo" name="motivo_contacto" placeholder="Escriba su comentario"></textarea>
-                </div>
-    
-                <div class="formulario_datos">
-                    <button type="submit" class="boton_formulario">Enviar</button>
-                </div>
-                <p>Uno de nuestros asesores se contactará con usted de inmediato</p>
-            </div>   
-            </form>
-            
-        <div class="lugar_encuentro">
-            <h3>
-                Localiza nuestro local
-            </h3>
-        </div> 
-        <div class="mapita">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.2039298562654!2d-58.797457425145666!3d-34.3452876438945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb61075e3ffe1f%3A0x29f9ee170bebbb75!2sHonecker%20Boutique%20de%20chocolates%20Escobar!5e0!3m2!1ses!2sar!4v1732666641312!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>   
+    <div class = "boxCards">
+    <h2 class = "blog conteiner" >Nuestros productos</h2>
+    <div class="cardsFlex">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/de_productos/con_leche.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Café con leche </h5>
+              <p class="card-text">50% CAFE - 50% LECHE</p>
+              <h6 class ="card-price">$ 3900</h6>
+              <button type="button" class="btn-1">Agregar al Carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/de_productos/cortado.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Café cortado</h5>
+              <p class="card-text">75% CAFE - 25% LECHE</p>
+              <h6 class ="card-price">$ 3000</h6>
+              <button type="button" class="btn-1">Agregar al Carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/de_productos/lagrima.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Café lágrima</h5>
+                <p class="card-text">25% CAFE - 75% LECHE</p>
+                <h6 class ="card-price">$ 3400</h6>
+                <button type="button" class="btn-1">Agregar al Carrito</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="images/de_productos/expreso.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Café expresso</h5>
+                <p class="card-text">100% CAFE</p>
+                <h6 class ="card-price">$ 2500</h6>
+                <button type="button" class="btn-1">Agregar al Carrito</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="images/de_productos/doble.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Café doble</h5>
+                <p class="card-text">100% CAFE (x2)</p>
+                <h6 class ="card-price">$ 3000</h6>
+                <button type="button" class="btn-1">Agregar al Carrito</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="images/de_productos/americano.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Café americano</h5>
+                <p class="card-text">50% CAFE - 50% AGUA</p>
+                <h6 class ="card-price">$ 2800</h6>
+                <button type="button" class="btn-1">Agregar al Carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="cart-container"></div>
 
-    </main>
     <footer class="footer">
 
         <div class="footer-content conteiner">
@@ -130,7 +157,7 @@
                     <img src="images/de_footer/wp.png" alt="whatsapp">
                 </a>
                 </div>
-                
+
 
             </div>
         
@@ -140,7 +167,8 @@
         </h3>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
